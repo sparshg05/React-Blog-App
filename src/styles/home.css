@@ -1,0 +1,108 @@
+.container{
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 70%;
+}
+.hr{
+    width: 10%;
+    font-weight: bold;
+    color: red;
+}
+.inner-lower-container{
+    /* border: 2px solid green; */
+    margin-top: 30px;
+}
+.inner-container1{
+    margin-top:80px;
+    position: relative;
+}
+.inner-container2{
+    margin-top:70px;
+    position: relative;
+}
+.inner-container3{
+    margin-top:60px;
+    /* position: absolute; */
+}
+.inner-container0{
+    height:350px;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    margin-top:40px;
+}
+.first-child{
+    background-image: url('/src/images/landscape1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-left: 20px;
+    padding-top: 200px;
+    margin-right: 10px;
+    border-radius:5px;
+}
+.second-child{
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+.second-child-upper{
+    background-image: url('/src/images/landscape2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+    color: white;
+    border-radius:5px;
+    padding-left: 5px;
+    padding-top: 60px;
+}
+.second-child-lower{
+    background-image: url('/src/images/landscape2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    border-radius:5px;
+    padding-left: 5px;
+    padding-top: 60px;
+}
+
+.latest-articles{
+    /* background-color: #F08080; */
+   /* width: 80%; */
+   margin: auto auto;
+   display: grid;
+   grid-template-columns: 70% 30%;
+}
+
+.latest_article_first_child{
+    display: grid;
+    padding-right: 20px;
+    /* grid-template-rows: repeat(3,33%); */
+    /* background-color: #908D8D; */
+}
+.img-div{
+    background-image: url('/src/images/landscape.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border-radius:5px;
+}
+.latest_article_second_child{
+    display: flex;
+    flex-direction: column;
+}
+.ad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 530px;
+    border: 2px solid grey;
+    font-size:1.7rem;
+}

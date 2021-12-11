@@ -1,0 +1,39 @@
+.container{
+    height: 100%;
+    width: 70%;
+    display: grid;
+    margin: auto auto;
+    grid-template-columns: 65% 35%;
+}
+.inner-container-first{
+    margin-right: 20px;
+}
+.inner-container-second-ad{
+    display: flex;
+    height: 630px;
+    margin: 10px;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid grey;
+    font-size:1.7rem;
+}
+
+
+/* @media screen and (min-width: 320px) and (max-width: 480px) {
+    body{
+        width: 100vw;
+        border: 1px solid red;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .inner-container-first{
+        margin-right: 0px;
+    }
+    .content{
+        width: 100%;
+    }
+} */

@@ -84,10 +84,10 @@ const Bollywood = (props)=>{
                             <h2>The Posts</h2>
                             <hr className="hr"/>
 
-                            <div class="card border-0" style={{width: "10rem;"}}>
-                                <img src={image} class="card-img-top" alt="..." />
-                                <div class="card-body p-4">
-                                    <h4 class="card-title">{item.heading}</h4>
+                            <div class="box-card">
+                                <img src={image} alt="..." />
+                                <div class="box-card-inner">
+                                    <h3>{item.heading}</h3>
                                     <p>Travel / Decemember 6,2021</p>
                                 </div>
                             </div>

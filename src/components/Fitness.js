@@ -13,7 +13,7 @@ const Fitness = (props)=>{
             <Header/>
             {props.data.map(item => (
                 <>
-                    <div className="container1 mx-auto d-flex flex-column">
+                    <div className="container1 d-flex flex-column">
 
                         <div className="upper-container mx-auto mt-3">
                             <h2>5 Ways to animate a React app</h2>
@@ -57,44 +57,44 @@ const Fitness = (props)=>{
                             
                             <h5>More from the Siren</h5>
                             <div className="lower-container-inner d-flex">
-                                <div className="card border-0" >
+                                <div className="box-card1" >
                                     <p>Also tagged Reactjs</p>
-                                    <img src={image4} class="card-img-top" alt="..." />
-                                    <div class="card-body p-4">
-                                        <h4 class="card-title">{item.subheading}</h4>
-                                        <div className="face-div1 d-flex mt-3" >
-                                            <img src={image} style={{height:"70px" , width:"70px" , marginRight:"13px"}} alt=""/>
-                                            <div className="d-flex flex-column pt-3">
+                                    <img src={image4} alt="..." />
+                                    <div class="box-card1-inner">
+                                        <h4>{item.subheading}</h4>
+                                        <div className="face-div1" >
+                                            <img src={image} alt=""/>
+                                            <div className="face-div1-inner">
                                                 <h5>Dmitry Nozhenko</h5>
-                                                <p className="date" style={{fontSize:"12px"}}>Dec 7,2021-10 min read</p>
+                                                <p className="date">Dec 7,2021-10 min read</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="card border-0" >
+                                <div className="box-card1" >
                                     <p>Related reads</p>
-                                    <img src={image4} class="card-img-top" alt="..." />
-                                    <div class="card-body p-4">
-                                        <h4 class="card-title">{item.subheading}</h4>
-                                        <div className="face-div1 d-flex mt-3" >
-                                            <img src={image} style={{height:"70px" , width:"70px" , marginRight:"13px"}} alt=""/>
-                                            <div className="d-flex flex-column pt-3">
+                                    <img src={image4} alt="..." />
+                                    <div class="box-card1-inner">
+                                        <h4>{item.subheading}</h4>
+                                        <div className="face-div1" >
+                                            <img src={image} alt=""/>
+                                            <div className="face-div1-inner">
                                                 <h5>Dmitry Nozhenko</h5>
-                                                <p className="date" style={{fontSize:"12px"}}>Dec 7,2021-10 min read</p>
+                                                <p className="date" >Dec 7,2021-10 min read</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="card border-0">
+                                <div className="box-card1">
                                     <p>Related reads</p>
-                                    <img src={image4} class="card-img-top" alt="..." />
-                                    <div class="card-body p-4">
-                                        <h4 class="card-title">{item.subheading}</h4>
-                                        <div className="face-div1 d-flex mt-3" >
-                                            <img src={image} style={{height:"70px" , width:"70px"}} alt=""/>
-                                            <div className="d-flex flex-column pt-3">
+                                    <img src={image4} alt="..." />
+                                    <div class="box-card1-inner">
+                                        <h4>{item.subheading}</h4>
+                                        <div className="face-div1" >
+                                            <img src={image}  alt=""/>
+                                            <div className="face-div1-inner">
                                                 <h5>Dmitry Nozhenko</h5>
-                                                <p className="date" style={{fontSize:"12px"}}>Dec 7,2021-10 min read</p>
+                                                <p className="date">Dec 7,2021-10 min read</p>
                                             </div>
                                         </div>
                                     </div>

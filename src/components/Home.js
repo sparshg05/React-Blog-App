@@ -42,7 +42,7 @@ const Home = (props)=>{
                                     <div class="card-body p-4">
                                         <h4 class="card-title">{item.subheading}</h4>
                                         <p class="card-text">{item.brief}</p>
-                                        <a href="/" class="btn btn-primary">Go somewhere</a>
+                                        <p><b>Travel</b>/ Sunday 13, 2021</p>
                                     </div>
                                 </div>
                                 <div class="card" style={{width: "10rem;" , marginRight: "40px"}}>
@@ -50,7 +50,7 @@ const Home = (props)=>{
                                     <div class="card-body p-4">
                                         <h4 class="card-title">{item.subheading}</h4>
                                         <p class="card-text">{item.brief}</p>
-                                        <a href="/" class="btn btn-primary">Go somewhere</a>
+                                        <p><b>Travel</b>/ Sunday 13, 2021</p>
                                     </div>
                                 </div>
                                 <div class="card" style={{width: "10rem;" , marginRight: "40px"}}>
@@ -58,7 +58,7 @@ const Home = (props)=>{
                                     <div class="card-body p-4">
                                         <h4 class="card-title">{item.subheading}</h4>
                                         <p class="card-text">{item.brief}</p>
-                                        <a href="/" class="btn btn-primary">Go somewhere</a>
+                                        <p><b>Travel</b>/ Sunday 13, 2021</p>
                                     </div>
                                 </div>
                                 
@@ -108,34 +108,34 @@ const Home = (props)=>{
 
                                 </div>
                                 <div className="latest_article_second_child">
-                                    <div className="ad mb-3">Advertisment</div>
+                                    <div className="ad">Advertisment</div>
                                     
                                     <h2>The Posts</h2>
                                     <hr className="hr"/>
 
-                                    <div class="card border-0" style={{width: "10rem;"}}>
-                                        <img src={image} class="card-img-top" alt="..." style={{height: "55%"}}/>
-                                        <div class="card-body">
-                                            <h4 class="card-title">{item.heading}</h4>
+                                    <div class="box-card">
+                                        <img src={image} alt="..." />
+                                        <div class="box-card-inner">
+                                            <h3>{item.heading}</h3>
                                             <p>Travel / Decemember 6,2021</p>
                                         </div>
                                     </div>
-                                    <div className="d-flex" style={{borderBottom: '1px solid lightgrey', borderTop: '1px solid lightgrey'}}>
-                                        <img src={image} className="p-3" alt="..." style={{width:"39%"}}/>
+                                    <div className="box-card-lower" style={{borderBottom: '1px solid lightgrey', borderTop: '1px solid lightgrey'}}>
+                                        <img src={image} alt="..."/>
                                         <div className="content p-3" style={{width:"50%"}} >
                                             <h6>{item.heading}</h6>
                                             <p style={{fontSize:"12px"}}><b>TECH </b>/TODAY AT 10:00</p>
                                         </div>
                                     </div>
-                                    <div className="d-flex" style={{borderBottom: '1px solid lightgrey'}}>
-                                        <img src={image} className="p-3" alt="..." style={{width:"39%"}}/>
+                                    <div className="box-card-lower" style={{borderBottom: '1px solid lightgrey'}}>
+                                        <img src={image} alt="..."/>
                                         <div className="content p-3" style={{width:"50%"}} >
                                             <h6>{item.heading}</h6>
                                             <p style={{fontSize:"12px"}}><b>TECH </b>/TODAY AT 10:00</p>
                                         </div>
                                     </div>
-                                    <div className="d-flex">
-                                        <img src={image} className="p-3" alt="..." style={{width:"39%"}}/>
+                                    <div className="box-card-lower">
+                                        <img src={image} alt="..."/>
                                         <div className="content p-3" style={{width:"50%"}} >
                                             <h6>{item.heading}</h6>
                                             <p style={{fontSize:"12px"}}><b>TECH </b>/TODAY AT 10:00</p>

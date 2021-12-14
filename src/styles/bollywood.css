@@ -18,3 +18,10 @@
     border: 2px solid grey;
     font-size:1.7rem;
 }
+.box-card{
+    display: flex;
+    flex-direction:column;
+}
+.box-card-inner{
+    padding: 20px;
+}

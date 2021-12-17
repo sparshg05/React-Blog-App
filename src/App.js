@@ -7,24 +7,22 @@ import Hollywood from './components/Hollywood';
 import Fitness from './components/Fitness';
 import Food from './components/Food';
 import JasonData from './course.json';
-import {useState} from 'react';
 
 
 function App() {
 
-  const [state, setstate] = useState(JasonData);
 
   return (
     <>
       <Router>
 
         <Routes>
-          <Route path="/" element={<Home data={state}/>}></Route>
-          <Route path="/bollywood" element={<Bollywood data={state}/>}></Route>
-          <Route path="/technology" element={<Technology data={state}/>}></Route>
-          <Route path="/hollywood" element={<Hollywood data={state}/>}></Route>
-          <Route path="/fitness" element={<Fitness data={state}/>}></Route>
-          <Route path="/food" element={<Food data={state}/>}></Route>
+          <Route path="/" element={<Home data={JasonData}/>}></Route>
+          <Route path="/bollywood" element={<Bollywood data={JasonData}/>}></Route>
+          <Route path="/technology" element={<Technology data={JasonData}/>}></Route>
+          <Route path="/hollywood" element={<Hollywood data={JasonData}/>}></Route>
+          <Route path="/fitness" element={<Fitness data={JasonData}/>}></Route>
+          <Route path="/food" element={<Food data={JasonData}/>}></Route>
 
         </Routes>
 

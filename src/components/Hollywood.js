@@ -12,7 +12,7 @@ const Hollywood = (props)=>{
                     <div className="container">
                         <div className="inner-container-first">
 
-                            <h2>Bollywood</h2>
+                            <h2>Hollywood</h2>
                             <hr className="hr"/>
 
                             <div className="boxes">

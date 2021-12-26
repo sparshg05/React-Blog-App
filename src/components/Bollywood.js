@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import './../styles/bollywood.css';
 import image from './../images/landscape.jpg';
+import {Link} from 'react-router-dom';
 
 const Bollywood = (props)=>{
     return(
@@ -10,7 +11,7 @@ const Bollywood = (props)=>{
             {props.data.map(item => (
                 <>
                     <div className="container mx-auto mt-5">
-                        <div className="inner-container-first">
+                        <Link className="nav-link inner-container-first" to="/technology" style={{color: 'black'}}>
 
                             <h2>Bollywood</h2>
                             <hr className="hr"/>
@@ -73,10 +74,12 @@ const Bollywood = (props)=>{
                             </div>
 
                             <div className="view">
-                                LOAD MORE
+                            <Link className="nav-link" to="/technology">
+                                <b>LOAD MORE</b>
+                            </Link>
                             </div>
 
-                        </div>
+                        </Link>
 
 
                         <div className="inner-container-second">
@@ -84,13 +87,13 @@ const Bollywood = (props)=>{
                             <h2>The Posts</h2>
                             <hr className="hr"/>
 
-                            <div class="box-card">
+                            <Link class="nav-link box-card" to="/technology" style={{color: 'black'}}>
                                 <img src={image} alt="..." />
                                 <div class="box-card-inner">
                                     <h3>{item.heading}</h3>
                                     <p>Travel / Decemember 6,2021</p>
                                 </div>
-                            </div>
+                            </Link>
                             <div className="d-flex" style={{borderBottom: '1px solid lightgrey', borderTop: '1px solid lightgrey'}}>
                                 <img src={image} className="p-2" alt="..." style={{width:"39%"}}/>
                                 <div className="content p-2" style={{width:"50%"}} >

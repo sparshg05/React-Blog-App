@@ -6,6 +6,7 @@ import image1 from './../images/react-img.png';
 import image2 from './../images/code.png';
 import image3 from './../images/hand.png';
 import image4 from './../images/landscape.jpg';
+import {Link} from 'react-router-dom';
 
 
 const Technology = (props)=>{
@@ -25,7 +26,9 @@ const Technology = (props)=>{
                                     <p style={{fontSize:"12px"}}>Dec 7,2021-10 min read</p>
                                 </div>
                             </div>
-                            <div><img src={image1} style={{height:"30%" , width:"100%" , marginTop:"14px"}} alt=""/></div>
+                            <Link className="nav-link" to="/hollywood">
+                                <img src={image1} style={{height:"30%" , width:"100%" , marginTop:"14px"}} alt=""/>
+                            </Link>
                             <div className="text mt-5">
                                 <p style={{color:"black"}}>Animation in ReactJs app is a popular topic and there are many ways to create different types of animations. 
                                     Many developers create animation using css and adding classes to HTML tags. This is a great way and 
@@ -33,7 +36,9 @@ const Technology = (props)=>{
                                     GreenSock is the most powerful animation platform. There are also a lot of libraries, components to create animations in React.</p>
                                 <p style={{color:"black"}}>Let's talk about them</p>
                             </div>
-                            <div><img src={image2} style={{height:"30%" , width:"100%" , marginTop:"14px"}} alt=""/></div>
+                            <Link className="nav-link" to="/hollywood">
+                                <img src={image2} style={{height:"30%" , width:"100%" , marginTop:"14px"}} alt=""/>
+                            </Link>
                             <div className="d-flex mt-4">
                                 <div className="tech">React</div>
                                 <div className="tech">Javascript</div>

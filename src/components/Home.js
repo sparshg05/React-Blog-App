@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import './../styles/home.css';
 import image from './../images/landscape.jpg';
+import {Link} from 'react-router-dom';
 
 const Home = (props)=>{
     console.log(props);
@@ -13,22 +14,26 @@ const Home = (props)=>{
                     <div className="container mx-auto d-flex flex-column">
 
                         <div className="inner-container0">
-                            <div className="first-child">
+                            <Link className="nav-link first-child" to="/bollywood">
+                            {/* <div className="first-child"> */}
                                 <h3>Title of vertial gallery</h3>
                                 <p>Travel / Decemember 6,2021</p>
-                            </div>
-                            <div className="second-child">
+                            
+                            {/* </div> */}
+                            </Link>
+                            <Link className="nav-link second-child" to="/bollywood">
                                 <div className="second-child-upper">
                                     <h5>The Sound cloud</h5>
                                     <h5>You loved is doomed</h5>
                                     <p style={{fontSize:"12px"}}>Travel / Decemember 6,2021</p>
                                 </div>
-                                <div className="second-child-lower">
+                                <Link className="nav-link second-child-lower" to="/hollywood">
                                     <h5>The Sound cloud</h5>
                                     <h5>You loved is doomed</h5>
                                     <p style={{fontSize:"12px"}}>Travel / Decemember 6,2021</p>
-                                </div>
-                            </div>
+                                </Link>
+                            </Link>
+                        
                         </div>
 
 
@@ -36,11 +41,11 @@ const Home = (props)=>{
 
                             <h2>The Latest</h2>
                             <hr className="hr"/>
-                            <div className="inner-lower-container d-flex flex-row">
+                            <Link className="nav-link inner-lower-container d-flex flex-row" to="/bollywood">
                                 <div class="card" style={{width: "10rem;" , marginRight: "40px"}}>
                                     <img src={image} class="card-img-top" alt="..." />
                                     <div class="card-body p-4">
-                                        <h4 class="card-title">{item.subheading}</h4>
+                                        <h4 class="card-title" style={{color: "black"}}>{item.subheading}</h4>
                                         <p class="card-text">{item.brief}</p>
                                         <p><b>Travel</b>/ Sunday 13, 2021</p>
                                     </div>
@@ -48,7 +53,7 @@ const Home = (props)=>{
                                 <div class="card" style={{width: "10rem;" , marginRight: "40px"}}>
                                     <img src={image} class="card-img-top" alt="..." />
                                     <div class="card-body p-4">
-                                        <h4 class="card-title">{item.subheading}</h4>
+                                        <h4 class="card-title" style={{color: "black"}}>{item.subheading}</h4>
                                         <p class="card-text">{item.brief}</p>
                                         <p><b>Travel</b>/ Sunday 13, 2021</p>
                                     </div>
@@ -56,13 +61,13 @@ const Home = (props)=>{
                                 <div class="card" style={{width: "10rem;" , marginRight: "40px"}}>
                                     <img src={image} class="card-img-top" alt="..." />
                                     <div class="card-body p-4">
-                                        <h4 class="card-title">{item.subheading}</h4>
+                                        <h4 class="card-title" style={{color: "black"}}>{item.subheading}</h4>
                                         <p class="card-text">{item.brief}</p>
                                         <p><b>Travel</b>/ Sunday 13, 2021</p>
                                     </div>
                                 </div>
                                 
-                            </div>
+                            </Link>
 
                         </div>
 
@@ -74,8 +79,8 @@ const Home = (props)=>{
                             <div className="inner-lower-container latest-articles mt-6">
 
                                 <div class="latest_article_first_child">
-                                    <div style={{height: '580px'}}>
-                                        <div className="d-flex" style={{borderBottom: '1px solid lightgrey' , borderTop: '1px solid lightgrey'}}>
+                                    <Link className="nav-link" style={{height: '650px'}} to="/bollywood">
+                                        <div className="d-flex" style={{borderBottom: '1px solid lightgrey' , borderTop: '1px solid lightgrey' , color: "black"}}>
                                             <img src={image} className="p-3" alt="..." style={{width:"35%"}}/>
                                             <div className="content p-3" style={{width:"50%"}} >
                                                 <h4>{item.heading}</h4>
@@ -83,7 +88,7 @@ const Home = (props)=>{
                                                 <p><b>TECH </b>/TODAY AT 10:00</p>
                                             </div>
                                         </div>
-                                        <div className="d-flex" style={{borderBottom: '1px solid lightgrey'}}>
+                                        <div className="d-flex" style={{borderBottom: '1px solid lightgrey', color: "black"}}>
                                             <img src={image} className="p-3" alt="..." style={{width:"35%"}}/>
                                             <div className="content p-3" style={{width:"50%"}} >
                                                 <h4>{item.heading}</h4>
@@ -91,7 +96,7 @@ const Home = (props)=>{
                                                 <p><b>TECH </b>/TODAY AT 10:00</p>
                                             </div>
                                         </div>
-                                        <div className="d-flex" style={{borderBottom: '1px solid lightgrey'}}>
+                                        <div className="d-flex" style={{borderBottom: '1px solid lightgrey', color: "black"}}>
                                             <img src={image} className="p-3" alt="..." style={{width:"35%"}}/>
                                             <div className="content p-3" style={{width:"50%"}} >
                                                 <h4>{item.heading}</h4>
@@ -99,27 +104,27 @@ const Home = (props)=>{
                                                 <p><b>TECH </b>/TODAY AT 10:00</p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </Link>
 
-                                    <div className="img-div">
+                                    <Link className="nav-link img-div" to="/bollywood">
                                         <h2>Title of vertial gallery</h2>
                                         <p>Travel / Decemember 6,2021</p>
-                                    </div>
+                                    </Link>
 
                                 </div>
                                 <div className="latest_article_second_child">
-                                    <div className="ad">Advertisment</div>
+                                    <Link className="nav-link ad" to="/bollywood" style={{color: "black"}}>Advertisment</Link>
                                     
                                     <h2>The Posts</h2>
                                     <hr className="hr"/>
 
-                                    <div class="box-card">
+                                    <Link class="nav-link box-card" to="/bollywood" style={{color: "black"}}>
                                         <img src={image} alt="..." />
                                         <div class="box-card-inner">
                                             <h3>{item.heading}</h3>
                                             <p>Travel / Decemember 6,2021</p>
                                         </div>
-                                    </div>
+                                    </Link>
                                     <div className="box-card-lower" style={{borderBottom: '1px solid lightgrey', borderTop: '1px solid lightgrey'}}>
                                         <img src={image} alt="..."/>
                                         <div className="content p-3" style={{width:"50%"}} >
@@ -182,8 +187,12 @@ const Home = (props)=>{
                                 </div>
                                 
                             </div>
-                            {/* <span style={{marginTop: '100px', border: '1px solid red'}}>View More</span>
-                             */}
+                            <div style={{marginTop: '20px',fontSize: '15px',color:'#A2A2A2'}}>
+                            <Link className="nav-link" to="/bollywood">
+                                <b>VIEW MORE</b>
+                            </Link>
+                            </div>
+                            
                         </div>
 
                     </div>
